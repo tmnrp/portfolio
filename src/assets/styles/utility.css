@@ -1,0 +1,141 @@
+* {
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* display flex */
+.df {
+  display: flex;
+}
+
+.fdc {
+  flex-direction: column;
+}
+
+.fdr {
+  flex-direction: row;
+}
+
+/* display grid */
+.dg {
+  display: grid;
+}
+
+.gafc {
+  grid-auto-flow: column;
+}
+
+.gafr {
+  grid-auto-flow: row;
+}
+
+/* commons */
+
+.cp {
+  cursor: pointer;
+}
+
+.pa {
+  position: absolute;
+}
+
+.ls1 {
+  letter-spacing: 1px;
+}
+
+.ofxh {
+  overflow-x: hidden;
+}
+
+.h100p {
+  height: 100%;
+}
+
+.w100p {
+  width: 100%;
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+.w100vw {
+  width: 100vw;
+}
+
+.t0 {
+  top: 0;
+}
+
+.r0 {
+  right: 0;
+}
+
+.b0 {
+  bottom: 0;
+}
+
+.l0 {
+  left: 0;
+}
+
+.fwb {
+  font-weight: bold;
+}
+
+.fsi {
+  font-style: italic;
+}
+
+.tac {
+  text-align: center;
+}
+
+.jcc {
+  justify-content: center;
+}
+
+.jcsb {
+  justify-content: space-between;
+}
+
+.jcfe {
+  justify-content: flex-end;
+}
+
+.jcse {
+  justify-content: space-evenly;
+}
+
+.aic {
+  align-items: center;
+}
+
+.m0 {
+  margin: 0px;
+}
+
+.p0 {
+  padding: 0px;
+}
+
+/*
+Animations
+*/
+
+/* Slide in */
+.animate .fadein {
+  opacity: 0;
+  animation-name: fadein;
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

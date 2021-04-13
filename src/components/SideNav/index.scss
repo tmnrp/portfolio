@@ -1,0 +1,11 @@
+.snav {
+  transition: 0.3s ease-in-out;
+
+  .menu-item {
+    font-size: 25px;
+  }
+}
+
+.snav.active {
+  width: 100% !important;
+}
