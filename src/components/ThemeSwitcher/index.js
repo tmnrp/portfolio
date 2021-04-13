@@ -1,7 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-export const ThemeSwitcher = ({ themes, baseClsnm, onThemeChange }) => {
-  const [selectedTheme, setSelectedTheme] = useState({});
+export const ThemeSwitcher = ({
+  themes,
+  defaultTheme = {},
+  baseClsnm,
+  onThemeChange,
+}) => {
+  const [selectedTheme, setSelectedTheme] = useState(defaultTheme);
 
   //
   const [themeNames] = useState(getThemeNames(themes));

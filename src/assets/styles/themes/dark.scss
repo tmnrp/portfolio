@@ -1,10 +1,46 @@
-#root.dark {
-  .homepage {
-    /*background-image: linear-gradient(
-      90deg,
-      rgba(43, 44, 47, 1) 0%,
-      rgba(43, 44, 47, 1) 100%
-    );*/
-    background-color: pink;
+$base: #121212;
+$mid: #1e1e1e;
+$top: #858585;
+
+.homepage.dark {
+  background-color: $base;
+  color: $top;
+
+  // navbar
+  .navbar {
+    border-bottom: 1px solid $mid;
+
+    // logo
+    .logo-wrap {
+      border: 1px solid $top;
+    }
+    .logo-wrap:hover,
+    .logo-wrap:focus {
+      border: 2px solid $top !important;
+    }
+
+    // burger
+    .tm-burger .tm-burger-lines:nth-child(1) {
+      background: linear-gradient(to left, transparent 30%, $top 75%);
+    }
+    .tm-burger.active .tm-burger-lines:nth-child(1) {
+      background: linear-gradient(to left, transparent 0%, $top 75%);
+    }
+
+    .tm-burger .tm-burger-lines:nth-child(2) {
+      background: $top;
+    }
+
+    .tm-burger .tm-burger-lines:nth-child(3) {
+      background: linear-gradient(to right, transparent 30%, $top 75%);
+    }
+    .tm-burger.active .tm-burger-lines:nth-child(3) {
+      background: linear-gradient(to left, transparent 0%, $top 75%);
+    }
+  }
+
+  // footer
+  .footer {
+    border-top: 1px solid $mid;
   }
 }

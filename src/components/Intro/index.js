@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Intro = ({ avatarSrc }) => (
-  <section style={STYLES.SECTION}>
+  <section className="intro" style={STYLES.SECTION}>
     <Avatar avatarSrc={avatarSrc} />
     <BasicInfo />
   </section>
