@@ -22,7 +22,7 @@ const BasicInfo = () => (
     <div className="df jcc ls1" style={{ fontSize: 15 }}>
       Hi, I'm
     </div>
-    <div className="df jcc ls1" style={{ fontSize: 19, marginTop: -4 }}>
+    <div className="df jcc ls1" style={{ fontSize: 19, marginTop: 0 }}>
       {`<Tony Martin />`}
     </div>
     <div className="df jcc fsi ls1" style={{ fontSize: 18, marginTop: 5 }}>

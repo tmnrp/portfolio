@@ -15,7 +15,7 @@ export const NavBar = ({ hamburgerIconRef, setIsSNavAcive }) => (
         M
       </span>
     </div>
-    <div style={{ color: "#BBBBBB", zIndex: 2 }}>
+    <div style={{ zIndex: 2 }}>
       <HamburgerIcon
         ref={hamburgerIconRef}
         onClick={() => setIsSNavAcive((isSNavAcive) => !isSNavAcive)}

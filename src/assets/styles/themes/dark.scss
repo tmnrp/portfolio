@@ -1,6 +1,7 @@
 $base: #121212;
 $mid: #1e1e1e;
 $top: #858585;
+$bg-snav: rgba(15, 15, 15, 0.9);
 
 .homepage.dark {
   background-color: $base;
@@ -42,5 +43,10 @@ $top: #858585;
   // footer
   .footer {
     border-top: 1px solid $mid;
+  }
+
+  .snav {
+    color: $top;
+    background-color: $bg-snav;
   }
 }

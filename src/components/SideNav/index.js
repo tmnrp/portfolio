@@ -7,7 +7,7 @@ export const SideNav = ({ isSNavAcive, setIsSNavAcive }) => (
       isSNavAcive ? "active" : ""
     }`}
     onClick={() => setIsSNavAcive(false)}
-    style={STYLES.SNAV}
+    style={{ zIndex: 1, width: 0 }}
   >
     <MenuItems isSNavAcive={isSNavAcive} />
   </div>
@@ -48,6 +48,7 @@ const MenuItem = ({ text, isSelected, onClick, animationDelay }) => (
       animationDuration: "0.2s",
       animationFillMode: "forwards",
       animationDelay: animationDelay,
+      letterSpacing: 5,
     }}
   >
     {text}
@@ -61,32 +62,22 @@ const MENU_ITEMS = [
   },
   {
     name: "About me",
-    animationDelay: "0.5s",
+    animationDelay: "0.4s",
     isSelected: false,
   },
   {
     name: "Experience",
-    animationDelay: "0.7s",
+    animationDelay: "0.5s",
     isSelected: false,
   },
   {
     name: "Education",
-    animationDelay: "0.9s",
+    animationDelay: "0.6s",
     isSelected: false,
   },
   {
     name: "Contact",
-    animationDelay: "1.1s",
+    animationDelay: "0.7s",
     isSelected: false,
   },
 ];
-
-//
-const STYLES = {
-  SNAV: {
-    color: "#BBBBBB",
-    zIndex: 1,
-    width: 0,
-    backgroundColor: "rgb(64, 65, 68, 0.9)",
-  },
-};
