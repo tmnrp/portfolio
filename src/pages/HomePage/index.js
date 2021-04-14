@@ -23,7 +23,7 @@ export const HomePage = () => {
 
   //
   return (
-    <div className="homepage h100p">
+    <div className="homepage dark h100p">
       <NavBar
         setIsSNavAcive={setIsSNavAcive}
         hamburgerIconRef={hamburgerIconRef}
@@ -40,8 +40,9 @@ export const HomePage = () => {
  */
 
 export const THEMES = [
-  new Theme(THEME_MODES.DARK, "dark", "#BBBBBB"),
-  new Theme(THEME_MODES.LIGHT, "light", "#FFFFFF"),
-  new Theme(THEME_MODES.DARK, "darkpurple", "#2d0f1b"),
-  new Theme(THEME_MODES.LIGHT, "lightpurple", "#fc8fb6"),
+  new Theme(THEME_MODES.DARK, "dark", "#1e1e1e", "#858585"),
+  new Theme(THEME_MODES.LIGHT, "light", "#FFFFFF", "#1e1e1e", "#1e1e1e"),
+  new Theme(THEME_MODES.DARK, "darkpurple", "#2d0f1b", "#fb8fb6", "#fb8fb6"),
+  new Theme(THEME_MODES.LIGHT, "lightpurple", "#fc8fb6", "#FFFFF"),
+  new Theme(THEME_MODES.DARK, "darknavyblue", "#1c2a35", "#438dad", "#438dad"),
 ];

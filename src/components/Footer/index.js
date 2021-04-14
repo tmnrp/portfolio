@@ -4,9 +4,10 @@ import { ThemeSwitcher } from "../ThemeSwitcher";
 
 export const Footer = () => {
   return (
-    <div className="h100p df aic jcfe" style={{ padding: "5px 10px" }}>
+    <div className="footer h100p df aic jcfe" style={{ padding: "5px 10px" }}>
       <ThemeSwitcher
         themes={THEMES}
+        defaultTheme={THEMES[0]}
         baseClsnm="homepage"
         onThemeChange={(theme) => {}}
       />
