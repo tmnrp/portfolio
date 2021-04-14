@@ -40,8 +40,8 @@ export const HomePage = () => {
  */
 
 export const THEMES = [
-  new Theme(THEME_MODES.DARK, "dark", "#858585"),
-  new Theme(THEME_MODES.LIGHT, "light", "#FFFFFF"),
-  new Theme(THEME_MODES.DARK, "darkpurple", "#2d0f1b"),
-  new Theme(THEME_MODES.LIGHT, "lightpurple", "#fc8fb6"),
+  new Theme(THEME_MODES.DARK, "dark", "#1e1e1e", "#858585"),
+  new Theme(THEME_MODES.LIGHT, "light", "#FFFFFF", "#1e1e1e", "#1e1e1e"),
+  new Theme(THEME_MODES.DARK, "darkpurple", "#2d0f1b", "#fb8fb6", "#fb8fb6"),
+  new Theme(THEME_MODES.LIGHT, "lightpurple", "#fc8fb6", "#FFFFF"),
 ];
