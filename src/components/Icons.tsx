@@ -1,53 +1,46 @@
 import { SVGProps } from "react";
 
-export const IconProjectOutlined = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconProjectOutlined = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    stroke-width="0"
+    strokeWidth="0"
     viewBox="0 0 1024 1024"
     version="1.1"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path d="M312.1 591.5c3.1 3.1 8.2 3.1 11.3 0l101.8-101.8 86.1 86.2c3.1 3.1 8.2 3.1 11.3 0l226.3-226.5c3.1-3.1 3.1-8.2 0-11.3l-36.8-36.8c-3.1-3.1-8.2-3.1-11.3 0L517 485.3l-86.1-86.2c-3.1-3.1-8.2-3.1-11.3 0L275.3 543.4c-3.1 3.1-3.1 8.2 0 11.3l36.8 36.8z"></path>
     <path d="M904 160H548V96c0-4.4-3.6-8-8-8h-56c-4.4 0-8 3.6-8 8v64H120c-17.7 0-32 14.3-32 32v520c0 17.7 14.3 32 32 32h356.4v32L311.6 884.1c-3.7 2.4-4.7 7.3-2.3 11l30.3 47.2v0.1c2.4 3.7 7.4 4.7 11.1 2.3L512 838.9l161.3 105.8c3.7 2.4 8.7 1.4 11.1-2.3v-0.1l30.3-47.2c2.4-3.7 1.3-8.6-2.3-11L548 776.3V744h356c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32z m-40 512H160V232h704v440z"></path>
   </svg>
 );
 
-export const IconResumeOutlined = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconResumeOutlined = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"
-    version="1.1"
     viewBox="0 0 16 16"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
-    <path d="M13.5 0h-12c-0.825 0-1.5 0.675-1.5 1.5v13c0 0.825 0.675 1.5 1.5 1.5h12c0.825 0 1.5-0.675 1.5-1.5v-13c0-0.825-0.675-1.5-1.5-1.5zM13 14h-11v-12h11v12zM4 9h7v1h-7zM4 11h7v1h-7zM5 4.5c0-0.828 0.672-1.5 1.5-1.5s1.5 0.672 1.5 1.5c0 0.828-0.672 1.5-1.5 1.5s-1.5-0.672-1.5-1.5zM7.5 6h-2c-0.825 0-1.5 0.45-1.5 1v1h5v-1c0-0.55-0.675-1-1.5-1z"></path>
+    <path d="M7.5 5.5a.5.5 0 0 0-1 0v.634l-.549-.317a.5.5 0 1 0-.5.866L6 7l-.549.317a.5.5 0 1 0 .5.866l.549-.317V8.5a.5.5 0 1 0 1 0v-.634l.549.317a.5.5 0 1 0 .5-.866L8 7l.549-.317a.5.5 0 1 0-.5-.866l-.549.317V5.5zm-2 4.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 2a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"></path>
+    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"></path>
   </svg>
 );
 
-export const IconProfileOutlined = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconProfileOutlined = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="none"
     strokeWidth="0"
@@ -55,6 +48,7 @@ export const IconProfileOutlined = ({
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path
       fillRule="evenodd"
@@ -72,17 +66,15 @@ export const IconProfileOutlined = ({
 );
 
 //
-export const IconMailClosedOutlined = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconMailClosedOutlined = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
@@ -93,17 +85,15 @@ export const IconMailClosedOutlined = ({
 );
 
 //
-export const IconPhoneOutlined = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconPhoneOutlined = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
@@ -114,17 +104,15 @@ export const IconPhoneOutlined = ({
 );
 
 //
-export const IconLocationOutlined = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconLocationOutlined = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
@@ -167,91 +155,79 @@ export const IconGithubFilled = (
   </svg>
 );
 
-export const IconDownloadOutline = () => (
+export const IconDownloadOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="w-6 h-6"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      //strokeWidth={2}
       d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
     />
   </svg>
 );
 
-export const IconPaperAirplaneOutlined = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconPaperAirplaneOutlined = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      //strokeWidth={2}
       d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
     />
   </svg>
 );
 
-export const IconPaperAirplaneSolid = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconPaperAirplaneSolid = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
     viewBox="0 0 20 20"
     fill="currentColor"
+    {...props}
   >
     <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
   </svg>
 );
 
-export const IconMinusOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconMinusOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
-    <path
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      //strokeWidth={2}
-      d="M20 12H4"
-    />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M20 12H4" />
   </svg>
 );
 
-export const IconTemplateOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconTemplateOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
@@ -261,228 +237,195 @@ export const IconTemplateOutline = ({
   </svg>
 );
 
-export const IconColorSwitchOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconColorSwitchOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      //strokeWidth={2}
       d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
     />
   </svg>
 );
 
-export const IconServerOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconServerOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      //strokeWidth={2}
       d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
     />
   </svg>
 );
 
-export const IconDatabaseOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconDatabaseOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      //strokeWidth={2}
       d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"
     />
   </svg>
 );
 
-export const IconAcademicCapOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconAcademicCapOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className={className}
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
+    {...props}
   >
     <path d="M12 14l9-5-9-5-9 5 9 5z" />
     <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      //strokeWidth={2}
       d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
     />
   </svg>
 );
 
-export const IconJavascriptFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconJavascriptFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <title></title>
     <path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"></path>
   </svg>
 );
 
-export const IconTypescriptFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconTypescriptFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <title></title>
     <path d="M1.125 0C.502 0 0 .502 0 1.125v21.75C0 23.498.502 24 1.125 24h21.75c.623 0 1.125-.502 1.125-1.125V1.125C24 .502 23.498 0 22.875 0zm17.363 9.75c.612 0 1.154.037 1.627.111a6.38 6.38 0 0 1 1.306.34v2.458a3.95 3.95 0 0 0-.643-.361 5.093 5.093 0 0 0-.717-.26 5.453 5.453 0 0 0-1.426-.2c-.3 0-.573.028-.819.086a2.1 2.1 0 0 0-.623.242c-.17.104-.3.229-.393.374a.888.888 0 0 0-.14.49c0 .196.053.373.156.529.104.156.252.304.443.444s.423.276.696.41c.273.135.582.274.926.416.47.197.892.407 1.266.628.374.222.695.473.963.753.268.279.472.598.614.957.142.359.214.776.214 1.253 0 .657-.125 1.21-.373 1.656a3.033 3.033 0 0 1-1.012 1.085 4.38 4.38 0 0 1-1.487.596c-.566.12-1.163.18-1.79.18a9.916 9.916 0 0 1-1.84-.164 5.544 5.544 0 0 1-1.512-.493v-2.63a5.033 5.033 0 0 0 3.237 1.2c.333 0 .624-.03.872-.09.249-.06.456-.144.623-.25.166-.108.29-.234.373-.38a1.023 1.023 0 0 0-.074-1.089 2.12 2.12 0 0 0-.537-.5 5.597 5.597 0 0 0-.807-.444 27.72 27.72 0 0 0-1.007-.436c-.918-.383-1.602-.852-2.053-1.405-.45-.553-.676-1.222-.676-2.005 0-.614.123-1.141.369-1.582.246-.441.58-.804 1.004-1.089a4.494 4.494 0 0 1 1.47-.629 7.536 7.536 0 0 1 1.77-.201zm-15.113.188h9.563v2.166H9.506v9.646H6.789v-9.646H3.375z"></path>
   </svg>
 );
 
-export const IconHTMLFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconHTMLFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     version="1"
     viewBox="0 0 24 24"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path d="M13.1 3.5l.7 1.1.7-1.1v1.5h1v-3h-1l-.7 1.1-.6-1.1h-1.1v3h1zM18.4 5v-1h-1.4v-2h-1v3zM9.8 5h1v-2h.9v-1h-2.8v1h.9zM6.6 4h.9v1h1v-3h-1v1h-.9v-1h-1v3h1zM5 6l1.2 14.4 5.8 1.6 5.8-1.6 1.2-14.4h-14zm11.3 4.6h-6.8l.2 1.8h6.3999999999999995l-.5 5.5-3.6 1-3.6-1-.3-2.9h1.8l.1 1.5 2 .5 2-.5.2-2.3h-6.2l-.5-5.3h9l-.2 1.7z"></path>
   </svg>
 );
 
-export const IconCSSFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconCSSFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <title></title>
     <path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"></path>
   </svg>
 );
 
-export const IconGITFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconGITFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     viewBox="0 0 1024 1024"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"></path>
   </svg>
 );
 
-export const IconJavaOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconJavaOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     viewBox="0 0 384 512"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z"></path>
   </svg>
 );
 
-export const IconSQLOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconSQLOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     viewBox="0 0 1024 1024"
     version="1.1"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <defs></defs>
     <path d="M301.3 496.7c-23.8 0-40.2-10.5-41.6-26.9H205c0.9 43.4 36.9 70.3 93.9 70.3 59.1 0 95-28.4 95-75.5 0-35.8-20-55.9-64.5-64.5l-29.1-5.6c-23.8-4.7-33.8-11.9-33.8-24.2 0-15 13.3-24.5 33.4-24.5 20.1 0 35.3 11.1 36.6 27h53c-0.9-41.7-37.5-70.3-90.3-70.3-54.4 0-89.7 28.9-89.7 73 0 35.5 21.2 58 62.5 65.8l29.7 5.9c25.8 5.2 35.6 11.9 35.6 24.4 0.1 14.7-14.5 25.1-36 25.1z"></path>
@@ -491,56 +434,46 @@ export const IconSQLOutline = ({
   </svg>
 );
 
-export const IconJQueryOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconJQueryOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <title></title>
     <path d="M1.525 5.87c-2.126 3.054-1.862 7.026-.237 10.269.037.079.078.154.118.229.023.052.049.1.077.15.013.027.031.056.047.082.026.052.054.102.081.152l.157.266c.03.049.057.097.09.146.056.094.12.187.178.281.026.04.05.078.079.117a6.368 6.368 0 00.31.445c.078.107.156.211.24.315.027.038.058.076.086.115l.22.269c.028.03.055.067.084.099.098.118.202.233.306.35l.005.006a3.134 3.134 0 00.425.44c.08.083.16.165.245.245l.101.097c.111.105.223.209.34.309.002 0 .003.002.005.003l.057.05c.102.089.205.178.31.26l.125.105c.085.068.174.133.26.2l.137.105c.093.07.192.139.287.207.035.025.07.05.106.073l.03.023.28.185.12.08c.148.094.294.184.44.272.041.02.084.044.123.068.108.062.22.125.329.183.06.034.122.063.184.094.075.042.153.083.234.125a.324.324 0 01.056.023c.033.015.064.031.096.047.12.06.245.118.375.175.024.01.05.02.076.034.144.063.289.123.438.182.034.01.07.027.105.04.135.051.274.103.411.152l.05.018c.154.052.305.102.46.15.036.01.073.023.111.033.16.048.314.105.474.137 10.273 1.872 13.258-6.177 13.258-6.177-2.508 3.266-6.958 4.127-11.174 3.169-.156-.036-.312-.086-.47-.132a13.539 13.539 0 01-.567-.182l-.062-.024c-.136-.046-.267-.097-.4-.148a1.615 1.615 0 00-.11-.04c-.148-.06-.29-.121-.433-.184-.031-.01-.057-.024-.088-.036a23.44 23.44 0 01-.362-.17 1.485 1.485 0 01-.106-.052c-.094-.044-.188-.095-.28-.143a3.947 3.947 0 01-.187-.096c-.114-.06-.227-.125-.34-.187-.034-.024-.073-.044-.112-.066a15.922 15.922 0 01-.439-.27 2.107 2.107 0 01-.118-.078 6.01 6.01 0 01-.312-.207c-.035-.023-.067-.048-.103-.073a9.553 9.553 0 01-.295-.212c-.042-.034-.087-.066-.132-.1-.088-.07-.177-.135-.265-.208l-.118-.095a10.593 10.593 0 01-.335-.28.258.258 0 00-.037-.031l-.347-.316-.1-.094c-.082-.084-.166-.164-.25-.246l-.098-.1a9.081 9.081 0 01-.309-.323l-.015-.016c-.106-.116-.21-.235-.313-.355-.027-.03-.053-.064-.08-.097l-.227-.277a21.275 21.275 0 01-.34-.449C2.152 11.79 1.306 7.384 3.177 3.771m4.943-.473c-1.54 2.211-1.454 5.169-.254 7.508a9.111 9.111 0 00.678 1.133c.23.33.484.721.793.988.107.122.223.24.344.36l.09.09c.114.11.232.217.35.325l.016.013a9.867 9.867 0 00.414.342c.034.023.063.05.096.073.14.108.282.212.428.316l.015.009c.062.045.128.086.198.13.028.018.06.042.09.06.106.068.21.132.318.197.017.007.032.016.048.023.09.055.188.108.282.157.033.02.065.035.1.054.066.033.132.068.197.102l.032.014c.135.067.273.129.408.19.034.014.063.025.092.039.111.048.224.094.336.137.05.017.097.037.144.052.102.038.21.073.31.108l.14.045c.147.045.295.104.449.13C22.164 17.206 24 11.098 24 11.098c-1.653 2.38-4.852 3.513-8.261 2.628a8.04 8.04 0 01-.449-.13c-.048-.014-.09-.029-.136-.043-.104-.036-.211-.07-.312-.109l-.144-.054c-.113-.045-.227-.087-.336-.135-.034-.015-.065-.025-.091-.04-.14-.063-.281-.125-.418-.192l-.206-.107-.119-.06a5.673 5.673 0 01-.265-.15.62.62 0 01-.062-.035c-.106-.066-.217-.13-.318-.198-.034-.019-.065-.042-.097-.062l-.208-.136c-.144-.1-.285-.208-.428-.313-.032-.029-.063-.053-.094-.079-1.499-1.178-2.681-2.79-3.242-4.613-.59-1.897-.46-4.023.56-5.75m4.292-.147c-.909 1.334-.996 2.99-.37 4.46.665 1.563 2.024 2.79 3.608 3.37.065.025.128.046.196.07l.088.027c.092.03.185.063.28.084 4.381.845 5.567-2.25 5.886-2.704-1.043 1.498-2.792 1.857-4.938 1.335a4.85 4.85 0 01-.516-.16 6.352 6.352 0 01-.618-.254 6.53 6.53 0 01-1.082-.66c-1.922-1.457-3.113-4.236-1.859-6.5"></path>
   </svg>
 );
 
-export const IconReactOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconReactOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     viewBox="0 0 512 512"
     height="1em"
     width="1em"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <path d="M418.2 177.2c-5.4-1.8-10.8-3.5-16.2-5.1.9-3.7 1.7-7.4 2.5-11.1 12.3-59.6 4.2-107.5-23.1-123.3-26.3-15.1-69.2.6-112.6 38.4-4.3 3.7-8.5 7.6-12.5 11.5-2.7-2.6-5.5-5.2-8.3-7.7-45.5-40.4-91.1-57.4-118.4-41.5-26.2 15.2-34 60.3-23 116.7 1.1 5.6 2.3 11.1 3.7 16.7-6.4 1.8-12.7 3.8-18.6 5.9C38.3 196.2 0 225.4 0 255.6c0 31.2 40.8 62.5 96.3 81.5 4.5 1.5 9 3 13.6 4.3-1.5 6-2.8 11.9-4 18-10.5 55.5-2.3 99.5 23.9 114.6 27 15.6 72.4-.4 116.6-39.1 3.5-3.1 7-6.3 10.5-9.7 4.4 4.3 9 8.4 13.6 12.4 42.8 36.8 85.1 51.7 111.2 36.6 27-15.6 35.8-62.9 24.4-120.5-.9-4.4-1.9-8.9-3-13.5 3.2-.9 6.3-1.9 9.4-2.9 57.7-19.1 99.5-50 99.5-81.7 0-30.3-39.4-59.7-93.8-78.4zM282.9 92.3c37.2-32.4 71.9-45.1 87.7-36 16.9 9.7 23.4 48.9 12.8 100.4-.7 3.4-1.4 6.7-2.3 10-22.2-5-44.7-8.6-67.3-10.6-13-18.6-27.2-36.4-42.6-53.1 3.9-3.7 7.7-7.2 11.7-10.7zM167.2 307.5c5.1 8.7 10.3 17.4 15.8 25.9-15.6-1.7-31.1-4.2-46.4-7.5 4.4-14.4 9.9-29.3 16.3-44.5 4.6 8.8 9.3 17.5 14.3 26.1zm-30.3-120.3c14.4-3.2 29.7-5.8 45.6-7.8-5.3 8.3-10.5 16.8-15.4 25.4-4.9 8.5-9.7 17.2-14.2 26-6.3-14.9-11.6-29.5-16-43.6zm27.4 68.9c6.6-13.8 13.8-27.3 21.4-40.6s15.8-26.2 24.4-38.9c15-1.1 30.3-1.7 45.9-1.7s31 .6 45.9 1.7c8.5 12.6 16.6 25.5 24.3 38.7s14.9 26.7 21.7 40.4c-6.7 13.8-13.9 27.4-21.6 40.8-7.6 13.3-15.7 26.2-24.2 39-14.9 1.1-30.4 1.6-46.1 1.6s-30.9-.5-45.6-1.4c-8.7-12.7-16.9-25.7-24.6-39s-14.8-26.8-21.5-40.6zm180.6 51.2c5.1-8.8 9.9-17.7 14.6-26.7 6.4 14.5 12 29.2 16.9 44.3-15.5 3.5-31.2 6.2-47 8 5.4-8.4 10.5-17 15.5-25.6zm14.4-76.5c-4.7-8.8-9.5-17.6-14.5-26.2-4.9-8.5-10-16.9-15.3-25.2 16.1 2 31.5 4.7 45.9 8-4.6 14.8-10 29.2-16.1 43.4zM256.2 118.3c10.5 11.4 20.4 23.4 29.6 35.8-19.8-.9-39.7-.9-59.5 0 9.8-12.9 19.9-24.9 29.9-35.8zM140.2 57c16.8-9.8 54.1 4.2 93.4 39 2.5 2.2 5 4.6 7.6 7-15.5 16.7-29.8 34.5-42.9 53.1-22.6 2-45 5.5-67.2 10.4-1.3-5.1-2.4-10.3-3.5-15.5-9.4-48.4-3.2-84.9 12.6-94zm-24.5 263.6c-4.2-1.2-8.3-2.5-12.4-3.9-21.3-6.7-45.5-17.3-63-31.2-10.1-7-16.9-17.8-18.8-29.9 0-18.3 31.6-41.7 77.2-57.6 5.7-2 11.5-3.8 17.3-5.5 6.8 21.7 15 43 24.5 63.6-9.6 20.9-17.9 42.5-24.8 64.5zm116.6 98c-16.5 15.1-35.6 27.1-56.4 35.3-11.1 5.3-23.9 5.8-35.3 1.3-15.9-9.2-22.5-44.5-13.5-92 1.1-5.6 2.3-11.2 3.7-16.7 22.4 4.8 45 8.1 67.9 9.8 13.2 18.7 27.7 36.6 43.2 53.4-3.2 3.1-6.4 6.1-9.6 8.9zm24.5-24.3c-10.2-11-20.4-23.2-30.3-36.3 9.6.4 19.5.6 29.5.6 10.3 0 20.4-.2 30.4-.7-9.2 12.7-19.1 24.8-29.6 36.4zm130.7 30c-.9 12.2-6.9 23.6-16.5 31.3-15.9 9.2-49.8-2.8-86.4-34.2-4.2-3.6-8.4-7.5-12.7-11.5 15.3-16.9 29.4-34.8 42.2-53.6 22.9-1.9 45.7-5.4 68.2-10.5 1 4.1 1.9 8.2 2.7 12.2 4.9 21.6 5.7 44.1 2.5 66.3zm18.2-107.5c-2.8.9-5.6 1.8-8.5 2.6-7-21.8-15.6-43.1-25.5-63.8 9.6-20.4 17.7-41.4 24.5-62.9 5.2 1.5 10.2 3.1 15 4.7 46.6 16 79.3 39.8 79.3 58 0 19.6-34.9 44.9-84.8 61.4zm-149.7-15c25.3 0 45.8-20.5 45.8-45.8s-20.5-45.8-45.8-45.8c-25.3 0-45.8 20.5-45.8 45.8s20.5 45.8 45.8 45.8z"></path>
   </svg>
 );
 
-export const IconNextjsOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconNextjsOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -552,16 +485,12 @@ export const IconNextjsOutline = ({
   </svg>
 );
 
-export const IconTailwindCSSOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconTailwindCSSOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -573,16 +502,12 @@ export const IconTailwindCSSOutline = ({
   </svg>
 );
 
-export const IconExtJsOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconExtJsOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     version="1.1"
     viewBox="0 0 32 32"
     height="1em"
@@ -593,16 +518,12 @@ export const IconExtJsOutline = ({
   </svg>
 );
 
-export const IconSpringbootOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconSpringbootOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -614,16 +535,12 @@ export const IconSpringbootOutline = ({
   </svg>
 );
 
-export const IconBitbucketOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconBitbucketOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     viewBox="0 0 512 512"
     height="1em"
     width="1em"
@@ -633,16 +550,12 @@ export const IconBitbucketOutline = ({
   </svg>
 );
 
-export const IconJiraOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconJiraOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -654,16 +567,12 @@ export const IconJiraOutline = ({
   </svg>
 );
 
-export const IconAzureDevOpsOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconAzureDevOpsOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -675,16 +584,12 @@ export const IconAzureDevOpsOutline = ({
   </svg>
 );
 
-export const IconPostmanOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconPostmanOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -696,16 +601,12 @@ export const IconPostmanOutline = ({
   </svg>
 );
 
-export const IconTortoiseOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconTortoiseOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     viewBox="0 0 512 512"
     height="1em"
     width="1em"
@@ -715,16 +616,12 @@ export const IconTortoiseOutline = ({
   </svg>
 );
 
-export const IconMySqlOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconMySqlOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -736,16 +633,12 @@ export const IconMySqlOutline = ({
   </svg>
 );
 
-export const IconPostgresOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconPostgresOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -757,16 +650,12 @@ export const IconPostgresOutline = ({
   </svg>
 );
 
-export const IconMongoDBOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconMongoDBOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
-    //strokeWidth="0"
     role="img"
     viewBox="0 0 24 24"
     height="1em"
@@ -778,13 +667,10 @@ export const IconMongoDBOutline = ({
   </svg>
 );
 
-export const IconBulbOutline = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconBulbOutline = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -793,7 +679,6 @@ export const IconBulbOutline = ({
     <path
       strokeLinecap="round"
       strokeLinejoin="round"
-      //strokeWidth={2}
       d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
     />
   </svg>
@@ -807,7 +692,6 @@ export const IconBulbFilled = ({
   onClick?: () => void;
 }) => (
   <svg
-    className={className}
     onClick={onClick}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 20 20"
@@ -817,13 +701,10 @@ export const IconBulbFilled = ({
   </svg>
 );
 
-export const IconFirebaseFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconFirebaseFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"
@@ -836,13 +717,10 @@ export const IconFirebaseFilled = ({
   </svg>
 );
 
-export const IconAntDesignFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconAntDesignFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"
@@ -857,13 +735,10 @@ export const IconAntDesignFilled = ({
   </svg>
 );
 
-export const IconMaterialUIFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconMaterialUIFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="currentColor"
     strokeWidth="0"
@@ -878,13 +753,10 @@ export const IconMaterialUIFilled = ({
   </svg>
 );
 
-export const IconFramerMotionFilled = ({
-  className = "w-6 h-6",
-}: {
-  className?: string;
-}) => (
+export const IconFramerMotionFilled = (
+  props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>
+) => (
   <svg
-    className={className}
     stroke="currentColor"
     fill="none"
     strokeWidth="2"

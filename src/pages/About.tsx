@@ -7,7 +7,7 @@ import {
 
 //Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/software?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 export const About = () => (
-  <section>
+  <section className="my-2 bg-white rounded-lg">
     <div className="relative flex items-center w-full h-40">
       <img
         className="object-fill w-full h-24 filter blur-none"
@@ -15,7 +15,7 @@ export const About = () => (
         alt="Shot by Markus Spiske on Unsplash"
       />
       <img
-        className="absolute ml-5 rounded-full backdrop-filter backdrop-blur-lg"
+        className="absolute ml-5 border-4 border-white rounded-full backdrop-filter backdrop-blur-lg"
         src="/profilepic.jfif"
         alt="Parammal Harsh Harish"
         height={150}
@@ -40,10 +40,10 @@ export const About = () => (
       identify solution that is simple and scalable.
     </p>
 
-    <div className="px-5 pb-2 tracking-widest">
+    <div className="px-5 pb-4 tracking-widest">
       <div className="pb-1 font-semibold">What I offer</div>
 
-      <div className="space-y-2">
+      <div className="grid grid-cols-1 gap-2 lg:grid-cols-2">
         <div className="tm-card">
           <div>
             <div className="tm-card-body">

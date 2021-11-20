@@ -1,5 +1,22 @@
+.tm-nav-item {
+  @apply flex items-center h-12 px-2 mr-1 space-x-2 font-semibold tracking-widest border-b-2 border-transparent cursor-pointer;
+}
+.tm-nav-item:hover,
+.tm-nav-item.active {
+  @apply border-gray-600;
+}
+
+.tm-nav-item .tm-nav-item-icon {
+  @apply w-5 h-5 md:w-6 md:h-6;
+}
+
+.tm-nav-item .tm-nav-item-label {
+  @apply hidden md:block md:text-base;
+}
+
+/*  */
 .tm-card {
-  @apply flex flex-col border border-gray-200 h-full rounded;
+  @apply flex flex-col border border-gray-200 rounded shadow;
 }
 
 .tm-card-body {
@@ -7,7 +24,7 @@
 }
 
 .tm-card-icon {
-  @apply p-1 flex items-center justify-center h-auto;
+  @apply flex items-center justify-center h-auto p-1;
 }
 
 .tm-card-body-header {
