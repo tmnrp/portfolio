@@ -7,30 +7,32 @@ import {
 
 //Photo by <a href="https://unsplash.com/@markusspiske?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Markus Spiske</a> on <a href="https://unsplash.com/s/photos/software?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 export const About = () => (
-  <section className="my-2 bg-white rounded-lg">
-    <div className="relative flex items-center w-full h-40">
-      <img
-        className="object-fill w-full h-24 filter blur-none"
-        src="/banner.jpg"
-        alt="Shot by Markus Spiske on Unsplash"
-      />
-      <img
-        className="absolute ml-5 border-4 border-white rounded-full backdrop-filter backdrop-blur-lg"
-        src="/profilepic.jfif"
-        alt="Parammal Harsh Harish"
-        height={150}
-        width={150}
-      />
-    </div>
-
-    <div className="px-5 pb-2 space-y-1 tracking-wider border-b border-gray-200">
-      <div className="-space-y-1">
-        <div className="text-2xl font-semibold">Parammal Harsh Harish</div>
-        <div className="text-lg font-semibold">Technical Analyst</div>
+  <section className="my-1 bg-white border rounded-lg dark:bg-black md:my-3 dark:border-gray-700">
+    <div className="flex flex-col gap-2 border-b border-gray-200 lg:px-5 lg:flex-row-reverse dark:border-gray-700">
+      <div className="relative flex items-center w-full h-40">
+        <img
+          className="object-fill w-full h-24 filter blur-none"
+          src="/banner.jpg"
+          alt="Shot by Markus Spiske on Unsplash"
+        />
+        <img
+          className="absolute ml-5 border-4 border-white rounded-full dark:border-gray-400 backdrop-filter backdrop-blur-lg"
+          src="/profilepic.jfif"
+          alt="Parammal Harsh Harish"
+          height={150}
+          width={150}
+        />
       </div>
-      <div className="text-sm">
-        <div>Doyen Infosolutions Pvt. Ltd.</div>
-        <div>Vivekanand Education Society's Institute of Technology</div>
+
+      <div className="px-5 pb-2 space-y-1 tracking-wider lg:px-0 lg:pt-5">
+        <div className="-space-y-1">
+          <div className="text-2xl font-semibold">Parammal Harsh Harish</div>
+          <div className="text-lg font-semibold">Technical Analyst</div>
+        </div>
+        <div className="text-sm">
+          <div>Doyen Infosolutions Pvt. Ltd.</div>
+          <div>Vivekanand Education Society's Institute of Technology</div>
+        </div>
       </div>
     </div>
 

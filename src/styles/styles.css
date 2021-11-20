@@ -3,7 +3,7 @@
 }
 .tm-nav-item:hover,
 .tm-nav-item.active {
-  @apply border-gray-600;
+  @apply border-gray-600 dark:border-gray-400 dark:text-white;
 }
 
 .tm-nav-item .tm-nav-item-icon {
@@ -16,11 +16,11 @@
 
 /*  */
 .tm-card {
-  @apply flex flex-col border border-gray-200 rounded shadow;
+  @apply flex flex-col border border-gray-200 rounded shadow dark:border-gray-500;
 }
 
 .tm-card-body {
-  @apply flex border-b border-gray-200;
+  @apply flex border-b border-gray-200 dark:border-gray-500;
 }
 
 .tm-card-icon {
