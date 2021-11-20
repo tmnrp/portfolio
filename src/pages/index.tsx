@@ -16,7 +16,7 @@ import { About } from "./About";
 
 //
 export const App = () => {
-  const [theme, setTheme] = useState<ENUM_THEME>(ENUM_THEME.light);
+  const [, setTheme] = useState<ENUM_THEME>(ENUM_THEME.light);
   const toggleTheme = useCallback(() => {
     setTheme((theme) => {
       const el = document.getElementById("root");
