@@ -1,0 +1,19 @@
+.tm-card {
+  @apply flex flex-col border border-gray-200 h-full rounded;
+}
+
+.tm-card-body {
+  @apply flex border-b border-gray-200;
+}
+
+.tm-card-icon {
+  @apply p-1 flex items-center justify-center h-auto;
+}
+
+.tm-card-body-header {
+  @apply flex items-center justify-center font-semibold;
+}
+
+.tm-card-body-description {
+  @apply p-1 text-sm;
+}
