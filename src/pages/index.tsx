@@ -13,10 +13,11 @@ import {
 } from "../components/Icons";
 import { ENUM_THEME } from "../utils/enums";
 import { About } from "./About";
+import { Resume } from "./Resume";
 
 //
 export const App = () => {
-  const [, setTheme] = useState<ENUM_THEME>(ENUM_THEME.light);
+  const [, setTheme] = useState<ENUM_THEME>(ENUM_THEME.dark);
   const toggleTheme = useCallback(() => {
     setTheme((theme) => {
       const el = document.getElementById("root");
@@ -101,7 +102,7 @@ const Main = () => {
       <div className="h-full max-w-screen-sm lg:max-w-screen-md xl:max-w-screen-lg 2xl:max-w-screen-xl">
         <Routes>
           <Route path="/" element={<About />} />
-          <Route path="/resume" element={<div>Resume</div>} />
+          <Route path="/resume" element={<Resume />} />
           <Route path="/projects" element={<div>Projects</div>} />
         </Routes>
       </div>
