@@ -13,6 +13,7 @@ import {
 } from "../components/Icons";
 import { ENUM_THEME } from "../utils/enums";
 import { About } from "./About";
+import { Projects } from "./Projects";
 import { Resume } from "./Resume";
 
 //
@@ -36,7 +37,7 @@ export const App = () => {
       style={{ minWidth: 300 }}
     >
       <Header toggleTheme={toggleTheme} />
-      <div className="flex flex-col h-full overflow-auto">
+      <div className="flex flex-col h-full overflow-auto main-scroll">
         <Main />
         <Footer />
       </div>
@@ -103,7 +104,7 @@ const Main = () => {
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/projects" element={<div>Projects</div>} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
     </main>
