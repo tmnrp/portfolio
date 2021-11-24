@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   IconAcademicCapOutline,
   IconAntDesignFilled,
@@ -28,16 +29,28 @@ import {
   IconTypescriptFilled,
 } from "../components/Icons";
 import { Progressbar } from "../components/Progressbar";
+import {
+  VStaggerContainer,
+  VStaggerItemsFromRight,
+} from "../utils/framerMotions";
 
 export const Resume = () => {
   return (
-    <section className="my-1 bg-white border rounded-lg dark:bg-black md:my-3 dark:border-gray-700">
-      <div className="grid grid-cols-1 gap-4">
+    <motion.section
+      className="my-1 bg-white border rounded-lg dark:bg-black md:my-3 dark:border-gray-700"
+      {...VStaggerItemsFromRight}
+    >
+      <motion.div
+        className="grid grid-cols-1 gap-4"
+        variants={VStaggerContainer}
+        initial="initial"
+        animate="animate"
+      >
         <div className="grid grid-cols-1 gap-4 px-4 pb-4 lg:grid-cols-2">
           <div className="border-b border-gray-200 dark:border-gray-700">
             <div className="mb-1 text-lg font-bold">Experience</div>
             <div className="grid gap-3">
-              <div className="tm-card">
+              <motion.div className="tm-card" variants={VStaggerItemsFromRight}>
                 <div>
                   <div className="tm-card-body">
                     <div className="tm-card-icon">
@@ -74,9 +87,9 @@ export const Resume = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="tm-card">
+              <motion.div className="tm-card" variants={VStaggerItemsFromRight}>
                 <div>
                   <div className="tm-card-body">
                     <div className="tm-card-icon">
@@ -104,9 +117,9 @@ export const Resume = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="tm-card">
+              <motion.div className="tm-card" variants={VStaggerItemsFromRight}>
                 <div>
                   <div className="tm-card-body">
                     <div className="tm-card-icon">
@@ -139,14 +152,14 @@ export const Resume = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
 
           <div className="border-b border-gray-200 dark:border-gray-700">
             <div className="mb-1 text-lg font-bold">Education</div>
             <div>
-              <div className="tm-card">
+              <motion.div className="tm-card" variants={VStaggerItemsFromRight}>
                 <div>
                   <div className="tm-card-body">
                     <div className="tm-card-icon">
@@ -172,13 +185,13 @@ export const Resume = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
         </div>
 
         <div className="grid grid-cols-1 gap-4 px-4 pb-4 lg:grid-cols-2">
-          <div>
+          <motion.div variants={VStaggerItemsFromRight}>
             <div className="mb-1 text-lg font-bold">Languages</div>
             <div>
               <div className="p-2 space-y-2 tm-container">
@@ -219,9 +232,9 @@ export const Resume = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={VStaggerItemsFromRight}>
             <div className="mb-1 text-lg font-bold">Library</div>
             <div>
               <div className="p-2 space-y-2 tm-container">
@@ -256,9 +269,9 @@ export const Resume = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={VStaggerItemsFromRight}>
             <div className="mb-1 text-lg font-bold">Framework</div>
             <div>
               <div className="p-2 space-y-2 tm-container">
@@ -287,9 +300,9 @@ export const Resume = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={VStaggerItemsFromRight}>
             <div className="mb-1 text-lg font-bold">Databases</div>
             <div>
               <div className="p-2 space-y-2 tm-container">
@@ -318,9 +331,9 @@ export const Resume = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
 
-          <div>
+          <motion.div variants={VStaggerItemsFromRight}>
             <div className="mb-1 text-lg font-bold">{`Tools && Technologies`}</div>
             <div>
               <div className="p-2 space-y-2 tm-container">
@@ -367,9 +380,9 @@ export const Resume = () => {
                 />
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };

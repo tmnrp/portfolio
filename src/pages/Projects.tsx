@@ -1,15 +1,27 @@
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { IconExternalLinkFilled, IconNextjsOutline } from "../components/Icons";
+import {
+  VStaggerContainer,
+  VStaggerItemsFromRight,
+} from "../utils/framerMotions";
 
 export const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(
     PROJECTS["tmnrp-portfolio"]
   );
-  console.log(selectedProject);
 
+  //
   return (
-    <section className="my-1 bg-white border rounded-lg dark:bg-black md:my-3 dark:border-gray-700">
-      <div className="p-4 border-b border-gray-200 dark:border-gray-700">
+    <motion.section
+      className="my-1 bg-white border rounded-lg dark:bg-black md:my-3 dark:border-gray-700"
+      {...VStaggerItemsFromRight}
+    >
+      <motion.div
+        key={selectedProject.projectName}
+        className="p-4 border-b border-gray-200 dark:border-gray-700"
+        {...VStaggerItemsFromRight}
+      >
         <ProjectDetails
           projectName={selectedProject.projectName}
           domainName={selectedProject.domainName}
@@ -18,10 +30,10 @@ export const Projects = () => {
           repositoryURL={selectedProject.repositoryURL}
           image={selectedProject.image}
         />
-      </div>
+      </motion.div>
 
       <ProjectCards setSelectedProject={setSelectedProject} />
-    </section>
+    </motion.section>
   );
 };
 
@@ -104,7 +116,7 @@ const ProjectCard = ({
     }>
   >;
 }) => (
-  <div className="p-2 tm-container">
+  <motion.div className="p-2 tm-container" variants={VStaggerItemsFromRight}>
     <div className="flex pb-2 mb-2 border-b border-gray-200 dark:border-gray-700">
       <div className="flex items-center">{image}</div>
 
@@ -135,7 +147,7 @@ const ProjectCard = ({
       placeat itaque, a fugiat facilis eligendi aliquam veniam quod
       necessitatibus.
     </div>
-  </div>
+  </motion.div>
 );
 
 const ProjectCards = ({
@@ -152,7 +164,12 @@ const ProjectCards = ({
     }>
   >;
 }) => (
-  <div className="grid grid-cols-1 gap-4 p-4 lg:grid-cols-2">
+  <motion.div
+    className="grid grid-cols-1 gap-4 p-4 lg:grid-cols-2"
+    variants={VStaggerContainer}
+    initial="initial"
+    animate="animate"
+  >
     {/*  */}
     <ProjectCard
       setSelectedProject={setSelectedProject}
@@ -227,7 +244,7 @@ const ProjectCards = ({
         </div>
       }
     />
-  </div>
+  </motion.div>
 );
 
 //
