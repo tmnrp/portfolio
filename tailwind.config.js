@@ -1,17 +1,10 @@
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
-  darkMode: "class", // or 'media' or 'class'
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
-    extend: {
-      backgroundColor: {},
-      textColor: {},
-      borderColor: {},
-    },
-  },
-  variants: {
-    extend: {
-      fontWeight: ["hover", "focus"],
-    },
+    extend: {},
   },
   plugins: [],
 };
