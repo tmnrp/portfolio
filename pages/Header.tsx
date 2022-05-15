@@ -27,7 +27,7 @@ export const Header = () => {
         <nav className="pr-5">
           <ul
             className={`
-            flex space-x-10 md:space-x-5 lg:space-x-10 tracking-widest font-semibold
+            flex space-x-6 md:space-x-5 lg:space-x-10 tracking-widest font-semibold
           `}
           >
             {CONST_MENU_ITEMS.map((menuItem) => {

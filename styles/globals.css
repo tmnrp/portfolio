@@ -80,8 +80,10 @@ li {
 li::after {
   content: " ";
   height: 4px;
-  width: 50%;
+  width: 10px;
+  border-radius: 5px;
   bottom: -8px;
+  left: 7px;
   background-color: white;
   display: inline-flex;
   position: absolute;
