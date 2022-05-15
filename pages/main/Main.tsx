@@ -1,6 +1,8 @@
+/* eslint-disable react/display-name */
 import { GoogleMaterialIcons } from "@tmnrp/react-google-material-icons";
 import Link from "next/link";
 import {
+  forwardRef,
   useCallback,
   useEffect,
   useImperativeHandle,
@@ -58,46 +60,44 @@ export const Main = () => {
       <Contact />
 
       <Footer />
-      <ScrollToTop sttRef={sttRef} getScrollTopValue={getScrollTopValue} />
+      <ScrollToTop ref={sttRef} getScrollTopValue={getScrollTopValue} />
     </main>
   );
 };
 
 //
-const ScrollToTop = ({
-  sttRef,
-  getScrollTopValue,
-}: {
-  sttRef: any;
-  getScrollTopValue: () => number;
-}) => {
-  const [isVisible, setIsVisible] = useState(getScrollTopValue() > 700);
+const ScrollToTop = forwardRef(
+  ({ getScrollTopValue }: { getScrollTopValue: () => number }, ref) => {
+    const [isVisible, setIsVisible] = useState(getScrollTopValue() > 700);
 
-  //
-  useImperativeHandle(
-    sttRef,
-    () => ({
-      hide: () => setIsVisible(false),
-      show: () => setIsVisible(true),
-    }),
-    []
-  );
+    //
+    useImperativeHandle(
+      ref,
+      () => ({
+        hide: () => setIsVisible(false),
+        show: () => setIsVisible(true),
+      }),
+      []
+    );
 
-  //
-  return (
-    <div
-      className={`
+    //
+    return (
+      <div
+        className={`
         ${isVisible ? "" : "hidden"}
         fixed bottom-3 left-3 cursor-pointer
         border-2 border-slate-500 rounded-full
       `}
-    >
-      <Link href="#intro">
-        <GoogleMaterialIcons
-          iconName="straight"
-          className="text-slate-500 text-3xl"
-        />
-      </Link>
-    </div>
-  );
-};
+      >
+        <Link href="#intro">
+          <span>
+            <GoogleMaterialIcons
+              iconName="straight"
+              className="text-slate-500 text-3xl"
+            />
+          </span>
+        </Link>
+      </div>
+    );
+  }
+);

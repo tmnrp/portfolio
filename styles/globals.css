@@ -44,7 +44,6 @@ footer {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 74% 91%, 35% 81%, 0 93%);
 }
 
-/*  */
 #about {
   @apply bg-stone-100 text-black;
 }
@@ -53,13 +52,11 @@ footer {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 74% 91%, 35% 81%, 0 93%);
 }
 
-/*  */
 #projects .clip-container {
   @apply bg-stone-100 text-black;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 74% 91%, 35% 81%, 0 93%);
 }
 
-/*  */
 #resume {
   @apply bg-stone-100 text-black;
 }
@@ -68,11 +65,29 @@ footer {
   clip-path: polygon(0 0, 100% 0, 100% 80%, 74% 91%, 35% 81%, 0 93%);
 }
 
-/*  */
 #contact {
   @apply bg-stone-900;
 }
 #contact .clip-container {
   @apply bg-stone-100 text-black;
   clip-path: polygon(0 0, 100% 0, 100% 80%, 74% 80%, 35% 95%, 0 100%);
+}
+
+/*  */
+li {
+  position: relative;
+}
+li::after {
+  content: " ";
+  height: 4px;
+  width: 50%;
+  bottom: -8px;
+  background-color: white;
+  display: inline-flex;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+li.active::after {
+  opacity: 1;
 }
