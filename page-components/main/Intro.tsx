@@ -7,7 +7,7 @@ export const Intro = () => {
     <section id="intro">
       <article className="clip-container flex justify-center items-center">
         <WidthWrapperContainer
-          className={`grid gap-4 grid-rows-[1fr_2fr] md:grid-rows-none md:grid-cols-[2fr_1fr]`}
+          className={`grid gap-4 grid-rows-[1fr_1fr] sm:grid-rows-none sm:grid-cols-[2fr_1fr]`}
         >
           <IntroSummary />
           <ProfilePic />
@@ -30,9 +30,16 @@ const IntroSummary = () => (
         </div>
       </div>
 
-      <div className="text-lg md:text-xl lg:text-2xl tracking-widest">
-        <div>Technical Analyst</div>
-        <div className="italic text-xs md:text-sm lg:text-lg">full-stack</div>
+      <div className="text-lg md:text-xl lg:text-2xl tracking-widest max-w-sm lg:max-w-xl xl:max-w-4xl">
+        <div>
+          <span>Technical Analyst</span>
+          <span className="italic text-xs md:text-sm lg:text-lg ml-2">
+            (full-stack)
+          </span>
+        </div>
+
+        <div className="tracking-widest">Doyen Infosolutions pvt. ltd.</div>
+        <div className="tracking-widest">{`Vivekanand Education Society's Institute of Technology`}</div>
       </div>
     </div>
   </div>
@@ -40,7 +47,7 @@ const IntroSummary = () => (
 
 //
 const ProfilePic = () => (
-  <div className="flex justify-center items-start md:items-center">
+  <div className="flex justify-center items-start sm:items-center">
     <div className="flex justify-center items-center">
       <Image
         className="image object-cover rounded-3xl"

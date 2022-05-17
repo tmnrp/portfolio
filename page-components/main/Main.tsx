@@ -34,7 +34,7 @@ export const Main = () => {
     const scrollTop = getScrollTopValue() || 0;
 
     //
-    if (scrollTop > 700 && sttRef.current) {
+    if (scrollTop > 590 && sttRef.current) {
       sttRef.current.show();
     } else {
       sttRef.current.hide();
