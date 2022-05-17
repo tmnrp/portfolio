@@ -121,14 +121,14 @@ const CONST_MENU_ITEMS = [
     iconName: "face_6",
   },
   {
-    key: "projects",
-    name: "Projects",
-    iconName: "view_quilt",
-  },
-  {
     key: "resume",
     name: "Resume",
     iconName: "badge",
+  },
+  {
+    key: "projects",
+    name: "Projects",
+    iconName: "view_quilt",
   },
   {
     key: "contact",

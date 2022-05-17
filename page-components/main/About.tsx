@@ -5,7 +5,7 @@ import { WidthWrapperContainer } from "../../components/WidthWrapperContainer";
 export const About = () => {
   return (
     <section id="about">
-      <article className="clip-container">
+      <article className="clip-container flex justify-center items-center">
         <WidthWrapperContainer>
           <PageTitle title="About me" className="pt-4" />
 

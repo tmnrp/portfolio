@@ -38,8 +38,10 @@ const IntroSummary = () => (
           </span>
         </div>
 
-        <div className="tracking-widest">Doyen Infosolutions pvt. ltd.</div>
-        <div className="tracking-widest">{`Vivekanand Education Society's Institute of Technology`}</div>
+        <div className="text-sm mt-2">
+          <div className="tracking-widest">Doyen Infosolutions pvt. ltd.</div>
+          <div className="tracking-widest">{`Vivekanand Education Society's Institute of Technology`}</div>
+        </div>
       </div>
     </div>
   </div>

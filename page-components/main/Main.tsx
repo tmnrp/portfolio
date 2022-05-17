@@ -55,8 +55,8 @@ export const Main = () => {
     <main className="relative">
       <Intro />
       <About />
-      <Projects />
       <Resume />
+      <Projects />
       <Contact />
 
       <Footer />
