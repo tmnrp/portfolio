@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { WidthWrapperContainer } from "../components/WidthWrapperContainer";
+import { WidthWrapperContainer } from "../../components/WidthWrapperContainer";
 
 //
 export const Intro = () => {

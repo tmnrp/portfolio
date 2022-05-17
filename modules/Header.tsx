@@ -7,8 +7,8 @@ import {
   useEffect,
   useState,
 } from "react";
+import { WidthWrapperContainer } from "../components/WidthWrapperContainer";
 import { isElementInViewPort } from "../utils";
-import { WidthWrapperContainer } from "./components/WidthWrapperContainer";
 
 export const Header = () => {
   //

@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
-import { Header } from "./Header";
-import { Main } from "./main/Main";
+import { Main } from "../modules/main/Main";
+import { Header } from "../modules/Header";
 
 //
 const Portfolio: NextPage = () => {
