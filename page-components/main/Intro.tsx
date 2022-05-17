@@ -6,7 +6,9 @@ export const Intro = () => {
   return (
     <section id="intro">
       <article className="clip-container flex justify-center items-center">
-        <WidthWrapperContainer className={`grid gap-4 md:grid-cols-[2fr_1fr]`}>
+        <WidthWrapperContainer
+          className={`grid gap-4 grid-rows-[1fr_2fr] md:grid-rows-none md:grid-cols-[2fr_1fr]`}
+        >
           <IntroSummary />
           <ProfilePic />
         </WidthWrapperContainer>
@@ -38,13 +40,15 @@ const IntroSummary = () => (
 
 //
 const ProfilePic = () => (
-  <div className="flex justify-center items-center">
-    <Image
-      className="image object-cover rounded-3xl"
-      src="https://images.unsplash.com/photo-1648807763220-703398bc459f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-      alt="Profile pic"
-      height={"200%"}
-      width={"200%"}
-    />
+  <div className="flex justify-center items-start md:items-center">
+    <div className="flex justify-center items-center">
+      <Image
+        className="image object-cover rounded-3xl"
+        src="https://images.unsplash.com/photo-1648807763220-703398bc459f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt="Profile pic"
+        height={"200%"}
+        width={"200%"}
+      />
+    </div>
   </div>
 );
