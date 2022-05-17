@@ -7,7 +7,10 @@ export const WidthWrapperContainer = ({
   className = "",
   ...props
 }: IWidthWrapperContainer) => (
-  <div className={`px-5 ${className}`} {...props}>
+  <div
+    className={`px-5 md:max-w-3xl lg:max-w-5xl xl:max-w-7xl w-full ${className}`}
+    {...props}
+  >
     {children}
   </div>
 );

@@ -41,7 +41,7 @@ footer {
 /*  */
 #intro .clip-container {
   @apply bg-stone-900 text-white;
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 74% 91%, 35% 81%, 0 93%);
+  clip-path: polygon(0 0, 100% 0, 100% 92%, 74% 98%, 35% 95%, 0 98%);
 }
 
 #about {

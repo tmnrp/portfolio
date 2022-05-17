@@ -13,12 +13,14 @@ import { WidthWrapperContainer } from "./components/WidthWrapperContainer";
 export const Header = () => {
   //
   return (
-    <header className={`bg-stone-900 text-gray-50`}>
-      <WidthWrapperContainer
-        className={`
-          h-16 flex items-center justify-between
-        `}
-      >
+    <header
+      className={`
+        h-16
+        bg-stone-900 text-gray-50
+        flex justify-center items-center
+      `}
+    >
+      <WidthWrapperContainer className="flex justify-between items-center">
         <Logo />
         <Navbar />
       </WidthWrapperContainer>
@@ -42,8 +44,8 @@ const Navbar = () => {
     <nav>
       <ul
         className={`
-    flex space-x-6 md:space-x-5 lg:space-x-10 tracking-widest font-semibold
-  `}
+          flex space-x-6 tracking-widest font-semibold
+        `}
       >
         {CONST_MENU_ITEMS.map((menuItem) => {
           return (
@@ -54,14 +56,16 @@ const Navbar = () => {
               }`}
             >
               <Link href={`#${menuItem.key}`}>
-                <div className="flex space-x-2">
-                  <div className="flex items-center">
-                    <GoogleMaterialIcons iconName={menuItem.iconName} />
+                <a>
+                  <div className="flex space-x-2">
+                    <div className="flex items-center">
+                      <GoogleMaterialIcons iconName={menuItem.iconName} />
+                    </div>
+                    <div className="hidden md:flex sm:text-xs items-center uppercase">
+                      {menuItem.name}
+                    </div>
                   </div>
-                  <div className="hidden md:flex sm:text-xs items-center uppercase">
-                    {menuItem.name}
-                  </div>
-                </div>
+                </a>
               </Link>
             </li>
           );
