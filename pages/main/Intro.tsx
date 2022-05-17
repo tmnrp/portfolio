@@ -1,33 +1,42 @@
 import Image from "next/image";
+import { WidthWrapperContainer } from "../components/WidthWrapperContainer";
 
+//
 export const Intro = () => {
   return (
     <section id="intro">
-      <article className="clip-container flex lg:justify-center">
-        <div className="mt-16 pl-5 w-full lg:w-10/12 md:flex justify-between">
-          <div className="space-y-2">
-            <div>
-              <div className="tracking-widest">{`I'm`}</div>
-              <div className="text-3xl uppercase tracking-widest">
-                Parammal Harsh
-              </div>
-            </div>
-            <div className="text-xl tracking-widest">Full-stack developer</div>
-          </div>
+      <WidthWrapperContainer className="clip-container">
+        <IntroSummary />
 
-          <div className="flex justify-center mt-4 md:mt-0">
-            <div className="w-72 h-72">
-              <Image
-                className="rounded-3xl object-cover"
-                src="https://images.unsplash.com/photo-1648807763220-703398bc459f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
-                alt="Profile pic"
-                width={288}
-                height={288}
-              />
-            </div>
-          </div>
+        <div className="flex flex-row-reverse mt-6">
+          <ProfilePic />
         </div>
-      </article>
+      </WidthWrapperContainer>
     </section>
   );
 };
+
+//
+const IntroSummary = () => (
+  <>
+    <div className="pt-16 tracking-widest">{`I'm`}</div>
+    <div className="text-2xl uppercase tracking-widest font-semibold">
+      <span className="pb-1.5 border-b-2 border-stone-800">Parammal Harsh</span>
+    </div>
+    <div className="mt-2 text-lg tracking-widest">
+      <div>Technical Analyst</div>
+      <div className="italic text-xs">full-stack</div>
+    </div>
+  </>
+);
+
+//
+const ProfilePic = () => (
+  <Image
+    className="absolute object-cover rounded-3xl"
+    src="https://images.unsplash.com/photo-1648807763220-703398bc459f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+    alt="Profile pic"
+    width={250}
+    height={250}
+  />
+);
