@@ -11,7 +11,7 @@ export const Container = ({
   ...props
 }: IContainer) => {
   return (
-    <div className={`w-full max-w-5xl mx-auto ${className}`} {...props}>
+    <div className={`w-full max-w-5xl mx-auto px-4 ${className}`} {...props}>
       {children}
     </div>
   );

@@ -1,11 +1,22 @@
 import { GoogleMaterialIcons } from "@tmnrp/react-google-material-icons";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { isElementInsideViewport } from "../utils/isElementInsideViewport";
 import { Container } from "./Container";
 
 //
 export const Header = () => {
+  //
+  const {
+    isHomeInViewPort,
+    isAboutInViewPort,
+    isResumeInViewPort,
+    isProjectsInViewPort,
+    isContactMeInViewPort,
+  } = useMenuItemHighlighter();
+
+  //
   return (
     <header
       className={`
@@ -34,7 +45,10 @@ export const Header = () => {
             <Link href="#home">
               <a
                 className={`
-                  flex py-2 px-1 space-x-2 flex-shrink-0 active:text-emerald-500
+                  flex py-2 px-1 space-x-2 flex-shrink-0 
+                  hover:text-emerald-500 ${
+                    isHomeInViewPort ? "text-emerald-500" : ""
+                  }
                   lowercase tracking-widest font-semibold
                 `}
               >
@@ -50,7 +64,10 @@ export const Header = () => {
             <Link href="#about">
               <a
                 className={`
-                  flex py-2 px-1 space-x-2 flex-shrink-0 active:text-emerald-500
+                  flex py-2 px-1 space-x-2 flex-shrink-0
+                  hover:text-emerald-500 ${
+                    isAboutInViewPort ? "text-emerald-500" : ""
+                  }
                   lowercase tracking-widest font-semibold
                 `}
               >
@@ -66,7 +83,10 @@ export const Header = () => {
             <Link href="#resume">
               <a
                 className={`
-                  flex py-2 px-1 space-x-2 flex-shrink-0 active:text-emerald-500
+                  flex py-2 px-1 space-x-2 flex-shrink-0
+                  hover:text-emerald-500 ${
+                    isResumeInViewPort ? "text-emerald-500" : ""
+                  }
                   lowercase tracking-widest font-semibold
                 `}
               >
@@ -82,7 +102,10 @@ export const Header = () => {
             <Link href="#projects">
               <a
                 className={`
-                  flex py-2 px-1 space-x-2 flex-shrink-0 active:text-emerald-500
+                  flex py-2 px-1 space-x-2 flex-shrink-0
+                  hover:text-emerald-500 ${
+                    isProjectsInViewPort ? "text-emerald-500" : ""
+                  }
                   lowercase tracking-widest font-semibold
                 `}
               >
@@ -98,7 +121,10 @@ export const Header = () => {
             <Link href="#contactme">
               <a
                 className={`
-                  flex py-2 px-1 pr-3 space-x-2 flex-shrink-0 active:text-emerald-500
+                  flex py-2 px-1 pr-3 space-x-2 flex-shrink-0
+                  hover:text-emerald-500 ${
+                    isContactMeInViewPort ? "text-emerald-500" : ""
+                  }
                   lowercase tracking-widest font-semibold
                   
                 `}
@@ -122,4 +148,59 @@ export const Header = () => {
       </Container>
     </header>
   );
+};
+
+//
+const useMenuItemHighlighter = () => {
+  const [isHomeInViewPort, setIsHomeInViewPort] = useState(false);
+  const [isAboutInViewPort, setIsAboutInViewPort] = useState(false);
+  const [isResumeInViewPort, setIsResumeInViewPort] = useState(false);
+  const [isProjectsInViewPort, setIsProjectsInViewPort] = useState(false);
+  const [isContactMeInViewPort, setIsContactMeInViewPort] = useState(false);
+
+  //
+  const scrollHandler = useCallback(() => {
+    //
+    setIsHomeInViewPort(
+      isElementInsideViewport(document.getElementById("home"))
+    );
+
+    //
+    setIsAboutInViewPort(
+      isElementInsideViewport(document.getElementById("about"))
+    );
+
+    //
+    setIsResumeInViewPort(
+      isElementInsideViewport(document.getElementById("resume"))
+    );
+
+    //
+    setIsProjectsInViewPort(
+      isElementInsideViewport(document.getElementById("projects"))
+    );
+
+    //
+    setIsContactMeInViewPort(
+      isElementInsideViewport(document.getElementById("contactme"))
+    );
+  }, []);
+
+  //
+  useEffect(() => {
+    //
+    window.addEventListener("scroll", scrollHandler);
+
+    //
+    return () => window.removeEventListener("scroll", scrollHandler);
+  }, [scrollHandler]);
+
+  //
+  return {
+    isHomeInViewPort,
+    isAboutInViewPort,
+    isResumeInViewPort,
+    isProjectsInViewPort,
+    isContactMeInViewPort,
+  };
 };

@@ -45,7 +45,7 @@ export const Home = () => {
             <div className="pb-2">
               <p
                 className={`
-                  inline-flex pt-2 border-t border-t-gray-600 font-semibold
+                  inline-flex pt-2 border-t-2 border-t-gray-600 font-semibold
                   lg:text-xl
                 `}
               >
