@@ -1,5 +1,6 @@
 import { About } from "../components/About";
 import { Home } from "../components/Home";
+import { Resume } from "../components/Resume";
 
 //
 const Main = () => {
@@ -11,8 +12,13 @@ const Main = () => {
       </div>
 
       <About />
-      <div className="bg-black">
+      <div className="bg-stone-50">
         <div className="h-24 bg-white clipped-container" />
+      </div>
+
+      <Resume />
+      <div className="bg-red-200">
+        <div className="h-24 bg-stone-50 clipped-container" />
       </div>
     </>
   );

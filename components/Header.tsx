@@ -1,9 +1,8 @@
 import { GoogleMaterialIcons } from "@tmnrp/react-google-material-icons";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { isElementInsideViewport } from "../utils/isElementInsideViewport";
-import { Container } from "./Container";
 
 //
 export const Header = () => {
@@ -18,7 +17,7 @@ export const Header = () => {
         sticky top-0 z-10 shadow-sm shadow-gray-900 bg-black text-gray-400
       `}
     >
-      <Container className="flex items-center justify-between">
+      <div className="w-full max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
         <div
           className={`
             relative flex-shrink-0
@@ -139,7 +138,7 @@ export const Header = () => {
             <GoogleMaterialIcons type="outlined" iconName="dark_mode" />
           </button>
         </div>
-      </Container>
+      </div>
     </header>
   );
 };
