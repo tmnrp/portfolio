@@ -29,10 +29,17 @@ html {
   scroll-padding-top: 64px;
 }
 
-.clipped-container-home {
+.clipped-container {
   clip-path: polygon(0 0, 100% 0, 100% 0%, 60% 80%, 30% 30%, 0 100%);
 }
 
-.clipped-container-about {
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 95%, 60% 90%, 0 100%);
+.title-underline::after {
+  content: " hi ";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 10px;
+  width: 60px;
+  border-radius: 5px;
+  background-color: black;
 }

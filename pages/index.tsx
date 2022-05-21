@@ -6,13 +6,13 @@ const Main = () => {
   return (
     <>
       <Home />
-      <div className="bg-gray-300">
-        <div className="h-24 bg-black clipped-container-home" />
+      <div className="bg-white">
+        <div className="h-24 bg-black clipped-container" />
       </div>
 
       <About />
-      <div className="bg-gray-300">
-        <div className="h-24 bg-black" />
+      <div className="bg-black">
+        <div className="h-24 bg-white clipped-container" />
       </div>
     </>
   );
