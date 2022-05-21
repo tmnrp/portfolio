@@ -6,7 +6,6 @@ const Main = () => {
   return (
     <>
       <Home />
-      <About />
     </>
   );
 };

@@ -12,6 +12,10 @@
   font-family: "Montserrat", sans-serif;
 }
 
-.clipped-container {
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 71% 95%, 32% 90%, 0% 98%);
+html {
+  scroll-padding-top: 4rem;
+}
+
+.clipped-container-home {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 95%, 60% 90%, 0 100%);
 }
