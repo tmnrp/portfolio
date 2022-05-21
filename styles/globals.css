@@ -12,10 +12,27 @@
   font-family: "Montserrat", sans-serif;
 }
 
+*::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  @apply bg-gray-500;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: hsl(217, 19%, 40%);
+}
+
 html {
   scroll-padding-top: 64px;
 }
 
 .clipped-container-home {
+  clip-path: polygon(0 0, 100% 0, 100% 0%, 60% 80%, 30% 30%, 0 100%);
+}
+
+.clipped-container-about {
   clip-path: polygon(0 0, 100% 0, 100% 85%, 80% 95%, 60% 90%, 0 100%);
 }

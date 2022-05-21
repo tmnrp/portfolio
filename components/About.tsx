@@ -1,15 +1,16 @@
 import React from "react";
+import { Container } from "./Container";
 
 export const About = () => {
   return (
-    <div id="about" className="bg-white">
-      <div
-        className={`
-          clipped-container px-4 bg-[#F5F5F4]
-        `}
-      >
-        <div className="h-[1800px]">about</div>
-      </div>
+    <div
+      id="about"
+      className={`
+      bg-gray-300
+        h-[1500px] 
+      `}
+    >
+      <div className="w-full max-w-5xl mx-auto px-4">About</div>
     </div>
   );
 };

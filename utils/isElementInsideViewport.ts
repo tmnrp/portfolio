@@ -4,19 +4,7 @@ export const isElementInsideViewport = (el: HTMLElement | null) => {
   }
 
   //
-  const bounding = el.getBoundingClientRect();
-  const myElementHeight = el?.offsetHeight;
-  const myElementWidth = el?.offsetWidth;
-
-  //
-  return bounding.top - 600 >= -myElementHeight &&
-    bounding.left >= -myElementWidth &&
-    bounding.right <=
-      (window.innerWidth || document.documentElement.clientWidth) +
-        myElementWidth &&
-    bounding.bottom + 200 <=
-      (window.innerHeight || document.documentElement.clientHeight) +
-        myElementHeight
-    ? true
-    : false;
+  const windowInnerHeight = window.innerHeight;
+  const elTop = el?.getBoundingClientRect()?.top;
+  return elTop > 0 && elTop < windowInnerHeight;
 };

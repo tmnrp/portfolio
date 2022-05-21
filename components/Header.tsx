@@ -8,13 +8,7 @@ import { Container } from "./Container";
 //
 export const Header = () => {
   //
-  const {
-    isHomeInViewPort,
-    isAboutInViewPort,
-    isResumeInViewPort,
-    isProjectsInViewPort,
-    isContactMeInViewPort,
-  } = useMenuItemHighlighter();
+  const { activeMenuItem } = useMenuItemHighlighter();
 
   //
   return (
@@ -47,7 +41,7 @@ export const Header = () => {
                 className={`
                   flex py-2 px-1 space-x-2 flex-shrink-0 
                   hover:text-emerald-500 ${
-                    isHomeInViewPort ? "text-emerald-500" : ""
+                    activeMenuItem === "home" ? "text-emerald-500" : ""
                   }
                   lowercase tracking-widest font-semibold
                 `}
@@ -66,7 +60,7 @@ export const Header = () => {
                 className={`
                   flex py-2 px-1 space-x-2 flex-shrink-0
                   hover:text-emerald-500 ${
-                    isAboutInViewPort ? "text-emerald-500" : ""
+                    activeMenuItem === "about" ? "text-emerald-500" : ""
                   }
                   lowercase tracking-widest font-semibold
                 `}
@@ -85,7 +79,7 @@ export const Header = () => {
                 className={`
                   flex py-2 px-1 space-x-2 flex-shrink-0
                   hover:text-emerald-500 ${
-                    isResumeInViewPort ? "text-emerald-500" : ""
+                    activeMenuItem === "resume" ? "text-emerald-500" : ""
                   }
                   lowercase tracking-widest font-semibold
                 `}
@@ -104,7 +98,7 @@ export const Header = () => {
                 className={`
                   flex py-2 px-1 space-x-2 flex-shrink-0
                   hover:text-emerald-500 ${
-                    isProjectsInViewPort ? "text-emerald-500" : ""
+                    activeMenuItem === "projects" ? "text-emerald-500" : ""
                   }
                   lowercase tracking-widest font-semibold
                 `}
@@ -123,7 +117,7 @@ export const Header = () => {
                 className={`
                   flex py-2 px-1 pr-3 space-x-2 flex-shrink-0
                   hover:text-emerald-500 ${
-                    isContactMeInViewPort ? "text-emerald-500" : ""
+                    activeMenuItem === "contactme" ? "text-emerald-500" : ""
                   }
                   lowercase tracking-widest font-semibold
                   
@@ -152,38 +146,21 @@ export const Header = () => {
 
 //
 const useMenuItemHighlighter = () => {
-  const [isHomeInViewPort, setIsHomeInViewPort] = useState(false);
-  const [isAboutInViewPort, setIsAboutInViewPort] = useState(false);
-  const [isResumeInViewPort, setIsResumeInViewPort] = useState(false);
-  const [isProjectsInViewPort, setIsProjectsInViewPort] = useState(false);
-  const [isContactMeInViewPort, setIsContactMeInViewPort] = useState(false);
+  const [activeMenuItem, setActiveMenuItem] = useState("home");
 
   //
   const scrollHandler = useCallback(() => {
-    //
-    setIsHomeInViewPort(
-      isElementInsideViewport(document.getElementById("home"))
-    );
-
-    //
-    setIsAboutInViewPort(
-      isElementInsideViewport(document.getElementById("about"))
-    );
-
-    //
-    setIsResumeInViewPort(
-      isElementInsideViewport(document.getElementById("resume"))
-    );
-
-    //
-    setIsProjectsInViewPort(
-      isElementInsideViewport(document.getElementById("projects"))
-    );
-
-    //
-    setIsContactMeInViewPort(
-      isElementInsideViewport(document.getElementById("contactme"))
-    );
+    if (isElementInsideViewport(document.getElementById("home"))) {
+      setActiveMenuItem("home");
+    } else if (isElementInsideViewport(document.getElementById("about"))) {
+      setActiveMenuItem("about");
+    } else if (isElementInsideViewport(document.getElementById("resume"))) {
+      setActiveMenuItem("resume");
+    } else if (isElementInsideViewport(document.getElementById("projects"))) {
+      setActiveMenuItem("projects");
+    } else if (isElementInsideViewport(document.getElementById("contacts"))) {
+      setActiveMenuItem("contacts");
+    }
   }, []);
 
   //
@@ -196,11 +173,5 @@ const useMenuItemHighlighter = () => {
   }, [scrollHandler]);
 
   //
-  return {
-    isHomeInViewPort,
-    isAboutInViewPort,
-    isResumeInViewPort,
-    isProjectsInViewPort,
-    isContactMeInViewPort,
-  };
+  return { activeMenuItem };
 };

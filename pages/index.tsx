@@ -6,7 +6,14 @@ const Main = () => {
   return (
     <>
       <Home />
+      <div className="bg-gray-300">
+        <div className="h-24 bg-black clipped-container-home" />
+      </div>
+
       <About />
+      <div className="bg-gray-300">
+        <div className="h-24 bg-black" />
+      </div>
     </>
   );
 };
