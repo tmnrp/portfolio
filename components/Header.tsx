@@ -9,8 +9,7 @@ export const Header = () => {
   return (
     <header
       className={`
-        px-4
-        py-2 md:py-4
+        h-16 flex items-center
         sticky top-0 z-10 shadow-sm shadow-gray-900 bg-black text-gray-400
       `}
     >

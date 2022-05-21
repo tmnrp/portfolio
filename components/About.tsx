@@ -8,7 +8,7 @@ export const About = () => {
           clipped-container px-4 bg-[#F5F5F4]
         `}
       >
-        <div className="h-64">about</div>
+        <div className="h-[1800px]">about</div>
       </div>
     </div>
   );
