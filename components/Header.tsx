@@ -17,7 +17,7 @@ export const Header = () => {
         sticky top-0 z-10 shadow-sm shadow-gray-900 bg-black text-gray-400
       `}
     >
-      <div className="w-full max-w-5xl mx-auto px-4 py-6 flex items-center justify-between">
+      <div className="w-full max-w-6xl mx-auto px-4 py-6 flex items-center justify-between">
         <div
           className={`
             relative flex-shrink-0

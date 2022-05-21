@@ -13,7 +13,7 @@ export const Home = () => {
     >
       <div
         className={`
-          w-full max-w-5xl mx-auto px-4 
+          w-full max-w-6xl mx-auto px-4 
           grid grid-rows-[1fr_1fr] gap-12 sm:grid-rows-none sm:grid-cols-2
         `}
       >
@@ -59,7 +59,7 @@ export const Home = () => {
             <p className="italic text-xs">Full-stack</p>
           </div>
 
-          <div>
+          {/* <div>
             <div className="space-x-2 inline-flex pt-2 border-t border-t-gray-600">
               <GoogleMaterialIcons
                 className="flex items-center"
@@ -78,7 +78,7 @@ export const Home = () => {
                 {`Vivekanand Education Society's Institute of Technology`}
               </p>
             </div>
-          </div>
+          </div> */}
         </article>
       </div>
     </div>
