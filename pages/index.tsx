@@ -1,5 +1,6 @@
 import { About } from "../components/About";
 import { Home } from "../components/Home";
+import { Projects } from "../components/Projects";
 import { Resume } from "../components/Resume";
 
 //
@@ -17,8 +18,13 @@ const Main = () => {
       </div>
 
       <Resume />
-      <div className="bg-red-200">
+      <div className="bg-white">
         <div className="h-24 bg-stone-50 clipped-container" />
+      </div>
+
+      <Projects />
+      <div className="bg-black">
+        <div className="h-24 bg-white clipped-container" />
       </div>
     </>
   );
