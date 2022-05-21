@@ -1,16 +1,15 @@
-import type { NextPage } from "next";
-import { Main } from "../page-components/main/Main";
-import { Header } from "../page-components/Header";
+import { About } from "../components/About";
+import { Home } from "../components/Home";
 
 //
-const Portfolio: NextPage = () => {
+const Main = () => {
   return (
     <>
-      <Header />
-      <Main />
+      <Home />
+      <About />
     </>
   );
 };
 
 //
-export default Portfolio;
+export default Main;
