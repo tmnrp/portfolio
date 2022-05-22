@@ -1,4 +1,5 @@
 import { About } from "../components/About";
+import { Contact } from "../components/ContactMe";
 import { Footer } from "../components/Footer";
 import { Home } from "../components/Home";
 import { Projects } from "../components/Projects";
@@ -24,8 +25,13 @@ const Main = () => {
       </div>
 
       <Projects />
-      <div className="bg-black">
+      <div className="bg-stone-50">
         <div className="h-24 bg-white clipped-container" />
+      </div>
+
+      <Contact />
+      <div className="bg-black">
+        <div className="h-24 bg-stone-50 clipped-container" />
       </div>
 
       <Footer />

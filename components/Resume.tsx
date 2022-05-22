@@ -15,7 +15,10 @@ export const Resume = () => {
         <Title text="Resume" />
 
         <div className="flex flex-col space-y-5">
-          <fieldset className="border border-solid border-gray-300 p-3">
+          <fieldset
+            id="education"
+            className="border border-solid border-gray-300 p-3"
+          >
             <legend className="flex space-x-2">
               <GoogleMaterialIcons
                 className="flex items-center text-gray-700"
@@ -30,7 +33,10 @@ export const Resume = () => {
             </div>
           </fieldset>
 
-          <fieldset className="border border-solid border-gray-300 p-3">
+          <fieldset
+            id="experience"
+            className="border border-solid border-gray-300 p-3"
+          >
             <legend className="flex space-x-2">
               <GoogleMaterialIcons
                 className="flex items-center text-gray-700"
@@ -52,7 +58,10 @@ export const Resume = () => {
             </div>
           </fieldset>
 
-          <fieldset className="border border-solid border-gray-300 p-3">
+          <fieldset
+            id="tech-stack"
+            className="border border-solid border-gray-300 p-3"
+          >
             <legend className="flex space-x-2">
               <GoogleMaterialIcons
                 className="flex items-center text-gray-700"

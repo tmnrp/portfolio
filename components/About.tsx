@@ -31,7 +31,7 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="flex items-center space-x-4">
+            <div id="social-links" className="flex items-center space-x-4">
               <div className="relative h-6 w-6 flex items-center">
                 <Link
                   href="https://in.linkedin.com/in/harsh-parammal-0a831a50?original_referer=https%3A%2F%2Fwww.google.com%2F"
@@ -76,7 +76,7 @@ export const About = () => {
             </div>
           </div>
 
-          <div className="flex flex-col space-y-6">
+          <div id="my-offers" className="flex flex-col space-y-6">
             {/* Frontend development */}
             <div
               className={`

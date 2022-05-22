@@ -1,5 +1,5 @@
 import { GoogleMaterialIcons } from "@tmnrp/react-google-material-icons";
-import { Dispatch, SetStateAction, useState } from "react";
+import { useState } from "react";
 import { Title } from "./Title";
 import TicTacToe from "../assets/tic-tac-toe.jpg";
 import Fullstack from "../assets/react-fs1.jpg";
@@ -24,7 +24,10 @@ export const Projects = () => {
         <Title text="Projects" />
 
         <div>
-          <fieldset className="border border-solid border-gray-300 p-3">
+          <fieldset
+            id="preview"
+            className="border border-solid border-gray-300 p-3"
+          >
             <legend className="flex space-x-2">
               <GoogleMaterialIcons
                 className="flex items-center text-gray-700"
@@ -44,6 +47,7 @@ export const Projects = () => {
           </fieldset>
 
           <div
+            id="project-cards"
             className={`
               mt-6 grid grid-rows-[auto_1fr] gap-6 md:grid-rows-none md:grid-cols-2
             `}

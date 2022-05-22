@@ -157,8 +157,8 @@ const useMenuItemHighlighter = () => {
       setActiveMenuItem("resume");
     } else if (isElementInsideViewport(document.getElementById("projects"))) {
       setActiveMenuItem("projects");
-    } else if (isElementInsideViewport(document.getElementById("contacts"))) {
-      setActiveMenuItem("contacts");
+    } else if (isElementInsideViewport(document.getElementById("contactme"))) {
+      setActiveMenuItem("contactme");
     }
   }, []);
 
