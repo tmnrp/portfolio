@@ -6,7 +6,7 @@ interface ITitle
   text: string;
 }
 export const Title = ({ text, ...props }: ITitle) => (
-  <div className="mb-4" {...props}>
+  <h1 className="mb-4" {...props}>
     <p
       className={`
         uppercase tracking-widest text-xl  font-semibold
@@ -18,5 +18,5 @@ export const Title = ({ text, ...props }: ITitle) => (
       <div className="h-2 w-[60px] bg-stone-900" />
       <div className="h-[1px] w-full bg-stone-300" />
     </div>
-  </div>
+  </h1>
 );

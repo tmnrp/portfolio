@@ -1,32 +1,6 @@
 import { GoogleMaterialIcons } from "@tmnrp/react-google-material-icons";
-import {
-  IconAntDesignFilled,
-  IconAzureDevOpsOutline,
-  IconBitbucketOutline,
-  IconCSSFilled,
-  IconExtJsOutline,
-  IconFirebaseFilled,
-  IconFramerMotionFilled,
-  IconGITFilled,
-  IconGithubFilled,
-  IconHTMLFilled,
-  IconJavaOutline,
-  IconJavascriptFilled,
-  IconJiraOutline,
-  IconJQueryOutline,
-  IconMaterialUIFilled,
-  IconMongoDBOutline,
-  IconMySqlOutline,
-  IconNextjsOutline,
-  IconPostgresOutline,
-  IconPostmanOutline,
-  IconReactOutline,
-  IconSpringbootOutline,
-  IconSQLOutline,
-  IconTailwindCSSOutline,
-  IconTortoiseOutline,
-  IconTypescriptFilled,
-} from "./Icons";
+import Image from "next/image";
+import { CardTechStack } from "./CardTechStack";
 import { Title } from "./Title";
 
 export const Resume = () => {
@@ -47,7 +21,7 @@ export const Resume = () => {
                 className="flex items-center text-gray-700"
                 iconName="school"
               />
-              <p className="uppercase tracking-widest">Education</p>
+              <h2 className="uppercase tracking-widest">Education</h2>
             </legend>
 
             <div className="grid grid-rows-[auto_1fr] gap-5 md:grid-rows-none md:grid-cols-2">
@@ -62,7 +36,7 @@ export const Resume = () => {
                 className="flex items-center text-gray-700"
                 iconName="business_center"
               />
-              <p className="uppercase tracking-widest">Experience</p>
+              <h2 className="uppercase tracking-widest">Experience</h2>
             </legend>
 
             <div className="grid grid-rows-[auto_1fr] gap-5 md:grid-rows-none md:grid-cols-2">
@@ -84,15 +58,17 @@ export const Resume = () => {
                 className="flex items-center text-gray-700"
                 iconName="business_center"
               />
-              <p className="uppercase tracking-widest">Tech stack</p>
+              <h2 className="uppercase tracking-widest">Tech stack</h2>
             </legend>
 
             <div className="grid grid-rows-[auto_1fr] gap-5 md:grid-rows-none md:grid-cols-2">
-              <TSLanguages />
-              <TSLibrary />
-              <TSFramework />
+              <TSJSTS />
+              <TSFE />
+              <TSUIUX />
               <TSDB />
-              <TSTT />
+              <TSCTools />
+              <TSTools />
+              <TSBE />
             </div>
           </fieldset>
         </div>
@@ -110,7 +86,7 @@ const Masters = () => (
     `}
   >
     <div>
-      <p className="font-semibold tracking-widest text-gray-800">Masters</p>
+      <h3 className="font-semibold tracking-widest text-gray-800">Masters</h3>
       <p className="text-sm tracking-widest text-gray-800 border-b border-stone-300">
         {`Vivekanand Education Society's Institute of Technology`}
       </p>
@@ -134,7 +110,9 @@ const Graduation = () => (
     `}
   >
     <div>
-      <p className="font-semibold tracking-widest text-gray-800">Graduation</p>
+      <h3 className="font-semibold tracking-widest text-gray-800">
+        Graduation
+      </h3>
 
       <div className="text-sm tracking-widest text-gray-800 border-b border-stone-300">
         <p>{`Model college`}</p>
@@ -162,9 +140,9 @@ const DoyenTA = () => (
     `}
   >
     <div>
-      <p className="font-semibold tracking-widest text-gray-800">
+      <h3 className="font-semibold tracking-widest text-gray-800">
         Technical analyst
-      </p>
+      </h3>
       <div className="text-sm tracking-widest text-gray-800 border-b border-stone-300">
         <p>{`Doyen Infosolutions Pvt. Ltd.`}</p>
         <p className="text-xs">{`May 2021 - Present · 1y 1m`}</p>
@@ -198,9 +176,9 @@ const DoyenSSE = () => (
     `}
   >
     <div>
-      <p className="font-semibold tracking-widest text-gray-800">
+      <h3 className="font-semibold tracking-widest text-gray-800">
         Senior software engineer
-      </p>
+      </h3>
       <div className="text-sm tracking-widest text-gray-800 border-b border-stone-300">
         <p>{`Doyen Infosolutions Pvt. Ltd.`}</p>
         <p className="text-xs">{`May 2020 - April 2020 · 1y`}</p>
@@ -232,9 +210,9 @@ const IxiaSE = () => (
     `}
   >
     <div>
-      <p className="font-semibold tracking-widest text-gray-800">
+      <h3 className="font-semibold tracking-widest text-gray-800">
         Software engineer
-      </p>
+      </h3>
       <div className="text-sm tracking-widest text-gray-800 border-b border-stone-300">
         <p>{`Ixia solutions L.L.P.`}</p>
         <p className="text-xs">{`July 2018 - March 2020 · 1y 9m`}</p>
@@ -266,9 +244,9 @@ const VistaarSE = () => (
     `}
   >
     <div>
-      <p className="font-semibold tracking-widest text-gray-800">
+      <h3 className="font-semibold tracking-widest text-gray-800">
         Software engineer
-      </p>
+      </h3>
       <div className="text-sm tracking-widest text-gray-800 border-b border-stone-300">
         <p>{`Vistaar technologies`}</p>
         <p className="text-xs">{`July 2016 - March 2018 · 1y 1m`}</p>
@@ -294,7 +272,7 @@ const VistaarIntern = () => (
     `}
   >
     <div>
-      <p className="font-semibold tracking-widest text-gray-800">Intership</p>
+      <h3 className="font-semibold tracking-widest text-gray-800">Intership</h3>
       <div className="text-sm tracking-widest text-gray-800 border-b border-stone-300">
         <p>{`Vistaar technologies`}</p>
         <p className="text-xs">{`July 2016 - March 2018 · 1y 1m`}</p>
@@ -314,122 +292,375 @@ const VistaarIntern = () => (
 );
 
 //
-const TSLanguages = () => (
-  <div
-    className={`
-      px-4 py-2 space-y-2
-    bg-white shadow-md rounded-lg
-    `}
-  >
-    <div>
-      <p className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
-        Languages
-      </p>
+const TSJSTS = () => (
+  <CardTechStack>
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
 
-    <div className="text-sm flex flex-wrap gap-4">
-      <IconJavascriptFilled className="h-8 w-8 text-yellow-500 flex-shrink-0" />
-      <IconTypescriptFilled className="h-8 w-8 text-blue-500 flex-shrink-0" />
-      <IconHTMLFilled className="h-8 w-8 text-orange-500 flex-shrink-0" />
-      <IconCSSFilled className="h-8 w-8 text-sky-500 flex-shrink-0" />
-      <IconJavaOutline className="h-8 w-8 text-red-500 flex-shrink-0" />
-      <IconSQLOutline className="h-8 w-8 text-orange-700 flex-shrink-0" />
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/T/typescript-logo-B29A3F462D-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
-  </div>
+  </CardTechStack>
 );
 
 //
-const TSLibrary = () => (
-  <div
-    className={`
-      px-4 py-2 space-y-2
-    bg-white shadow-md rounded-lg
-    `}
-  >
-    <div>
-      <p className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
-        Library
-      </p>
+const TSFE = () => (
+  <CardTechStack>
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://cdn-icons-png.flaticon.com/512/1260/1260667.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
 
-    <div className="text-sm flex flex-wrap gap-4">
-      <IconReactOutline className="h-8 w-8 text-blue-500 flex-shrink-0" />
-      <IconJQueryOutline className="h-8 w-8 text-indigo-500 flex-shrink-0" />
-      <IconAntDesignFilled className="h-8 w-8 text-blue-400 flex-shrink-0" />
-      <IconMaterialUIFilled className="h-8 w-8 text-sky-500 flex-shrink-0" />
-      <IconFramerMotionFilled className="h-8 w-8 text-purple-500 flex-shrink-0" />
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/R/react-router-logo-AB5BFB638F-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
-  </div>
+    <div className="relative h-10 w-20">
+      <Image
+        src="https://seeklogo.com/images/N/nextjs-logo-963D40B71E-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://create-react-app.dev/img/logo.svg"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://brandslogos.com/wp-content/uploads/images/sencha-logo.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+  </CardTechStack>
 );
 
 //
-const TSFramework = () => (
-  <div
-    className={`
-      px-4 py-2 space-y-2
-    bg-white shadow-md rounded-lg
-    `}
-  >
-    <div>
-      <p className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
-        Framework
-      </p>
+const TSUIUX = () => (
+  <CardTechStack>
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/H/html5-without-wordmark-color-logo-14D252D878-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
 
-    <div className="text-sm flex flex-wrap gap-4">
-      <IconNextjsOutline className="h-8 w-8 text-gray-800 flex-shrink-0" />
-      <IconTailwindCSSOutline className="h-8 w-8 text-blue-500 flex-shrink-0" />
-      <IconExtJsOutline className="h-8 w-8 text-green-500 flex-shrink-0" />
-      <IconSpringbootOutline className="h-8 w-8 text-emerald-500 flex-shrink-0" />
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/C/css-3-logo-023C1A7171-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
-  </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/A/ant-design-logo-EAB6B3D5D9-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/M/material-ui-logo-5BDCB9BA8F-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/B/bootstrap-logo-3C30FB2A16-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://www.vectorlogo.zone/logos/framer/framer-icon.svg"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+  </CardTechStack>
+);
+
+//
+const TSBE = () => (
+  <CardTechStack>
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-24">
+      <Image
+        src="https://user-images.githubusercontent.com/12243763/40760176-7f92ceb8-6463-11e8-9c4b-f65907c613ae.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-24">
+      <Image
+        src="https://seeklogo.com/images/E/express-js-logo-FA36FF1D3F-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://jwt.io/img/pic_logo.svg"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/P/postman-logo-0087CA0D15-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-24">
+      <Image
+        src="https://seeklogo.com/images/S/splunk-technology-logo-15BAA370ED-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+  </CardTechStack>
 );
 
 //
 const TSDB = () => (
-  <div
-    className={`
-      px-4 py-2 space-y-2
-    bg-white shadow-md rounded-lg
-    `}
-  >
-    <div>
-      <p className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
-        Databases
-      </p>
+  <CardTechStack>
+    <div className="relative h-10 w-24">
+      <Image
+        src="https://seeklogo.com/images/M/mongodb-logo-4A71340576-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
 
-    <div className="text-sm flex flex-wrap gap-4">
-      <IconMySqlOutline className="h-8 w-8 text-blue-600 flex-shrink-0" />
-      <IconPostgresOutline className="h-8 w-8 text-blue-400 flex-shrink-0" />
-      <IconMongoDBOutline className="h-8 w-8 text-green-500 flex-shrink-0" />
-      <IconFirebaseFilled className="h-8 w-8 text-yellow-500 flex-shrink-0" />
+    <div className="relative h-10 w-20">
+      <Image
+        src="https://mongoosejs.com/docs/images/mongoose5_62x30_transparent.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
-  </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/M/mysql-logo-69B39F7D18-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/P/postqresql-logo-AD0E066492-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+  </CardTechStack>
 );
 
 //
-const TSTT = () => (
-  <div
-    className={`
-      px-4 py-2 space-y-2
-    bg-white shadow-md rounded-lg
-    `}
-  >
-    <div>
-      <p className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
-        {`Tools && Technologies`}
-      </p>
+const TSCTools = () => (
+  <CardTechStack>
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/V/visual-studio-code-logo-449D71944F-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
 
-    <div className="text-sm flex flex-wrap gap-4">
-      <IconGITFilled className="h-8 w-8 text-orange-500 flex-shrink-0" />
-      <IconGithubFilled className="h-8 w-8 text-gray-500 flex-shrink-0" />
-      <IconBitbucketOutline className="h-8 w-8 text-blue-500 flex-shrink-0" />
-      <IconJiraOutline className="h-8 w-8 text-blue-700 flex-shrink-0" />
-      <IconAzureDevOpsOutline className="h-8 w-8 text-sky-500 flex-shrink-0" />
-      <IconPostmanOutline className="h-8 w-8 text-orange-500 flex-shrink-0" />
-      <IconTortoiseOutline className="h-8 w-8 text-cyan-500 flex-shrink-0" />
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/P/prettier-logo-D5C5197E37-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
     </div>
-  </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/E/eslint-logo-4B5C528034-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-28">
+      <Image
+        src="https://seeklogo.com/images/S/sonarqube-logo-B421B8304D-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+  </CardTechStack>
+);
+
+//
+const TSTools = () => (
+  <CardTechStack>
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/G/git-logo-A1D01DDA30-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/G/github-logo-5F384D0265-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/J/jira-logo-FD39F795A7-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/B/bitbucket-logo-D072214725-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/C/confluence-logo-D9B07137C2-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/B/bamboo-logo-B412762239-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://logodix.com/logo/637183.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+
+    <div className="relative h-10 w-10">
+      <Image
+        src="https://seeklogo.com/images/D/docker-logo-6D6F987702-seeklogo.com.png"
+        alt=""
+        layout="fill"
+        objectFit="contain"
+      />
+    </div>
+  </CardTechStack>
 );

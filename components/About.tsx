@@ -5,6 +5,7 @@ import Npmjs from "../assets/npmjs.png";
 import Linkedin from "../assets/linkedin.png";
 import { Title } from "./Title";
 
+//
 export const About = () => {
   return (
     <div
@@ -83,9 +84,9 @@ export const About = () => {
               bg-stone-100 shadow-md rounded-lg
               `}
             >
-              <p className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
+              <h3 className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
                 Frontend development
-              </p>
+              </h3>
               <div className="text-sm space-y-1">
                 <p>Minimalistic and user-friendly user interface.</p>
                 <p>
@@ -102,9 +103,9 @@ export const About = () => {
               bg-stone-100 shadow-md rounded-lg
               `}
             >
-              <p className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
+              <h3 className="font-semibold tracking-widest text-gray-800 border-b border-stone-300">
                 Backend development
-              </p>
+              </h3>
               <div className="text-sm space-y-1">
                 <p>REST API using Express and Springboot.</p>
                 <p>Database management using SQL and NoSQL.</p>
